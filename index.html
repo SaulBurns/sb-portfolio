@@ -3,14 +3,16 @@
 <head>
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/mid.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <title>Saul Burns</title>
 </head>
 <body>
   <div class="main-container">
-
     <div class="header-container">
       <div class="profile-picture-container">
         <img src="images/profile_img_example.jpg" class="profile-picture">
@@ -20,7 +22,48 @@
       <a>Contact</a>
       <a>Resume</a>
     </div>
-
+    <div class="mid-container">
+      <div class="text-section">
+        <p style="margin-top: 50px;">Welcome to my portfolio,</p>
+        <p class="headline">
+          I'm Saul Burns, a<br>
+          <span id="js-dynamic-headline"></span>
+        </p>
+        <div class="icons-container">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" class="skill"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skill"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" class="skill"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="skill"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skill"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skill"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="skill"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skill"/>
+        </div>
+        <p class="text-presentation"> 
+          Pursuing my B.S. in <strong>Computer Science</strong> and fast-tracking
+          into a Master's in <strong>AI</strong>. I love working on meaningful
+          projects that solve real problems and help people.
+          Always learning, always building—whether it's writing
+          code or riding my bike.
+        </p>
+        <div class="bottom-buttons">
+          <button class="projects-button">Projects
+            <img src="images/icons8-project-50.png">
+          </button>
+          <button class="resume-button">Resume
+            <img src="images/icons8-external-link-30.png">
+          </button>
+        </div>
+      </div>
+      <div class="picture-column-one">
+        <img src="images/profile_img_example.jpg" class="picture-one">
+        <img src="images/second-photo.jpg" class="picture-two">
+      </div>
+      <div class="picture-column-two">
+        <img src="images/third-photo.jpg" class="picture-three">
+      </div>
+    </div>
   </div>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
