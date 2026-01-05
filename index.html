@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/mid.css">
+  <link rel="stylesheet" href="styles/index/index.css">
+  <link rel="stylesheet" href="styles/index/header.css">
+  <link rel="stylesheet" href="styles/index/mid.css">
+  <link rel="stylesheet" href="styles/index/recent_projects.css">
+  <link rel="stylesheet" href="styles/index/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <title>Saul Burns</title>
 </head>
 <body>
   <div class="main-container">
     <div class="header-container">
       <div class="profile-picture-container">
-        <img src="images/profile_img_example.jpg" class="profile-picture">
+        <img src="images/first-photo.jpg" class="profile-picture">
       </div>
       <a>About</a>
       <a>Projects</a>
@@ -58,13 +61,90 @@
         </div>
       </div>
       <div class="picture-column-one">
-        <img src="images/profile_img_example.jpg" class="picture-one">
+        <img src="images/first-photo.jpg" class="picture-one">
         <img src="images/second-photo.jpg" class="picture-two">
       </div>
       <div class="picture-column-two">
         <img src="images/third-photo.jpg" class="picture-three">
       </div>
     </div>
+    <div class="recent-projects-container">
+      <p class="recent-projects-text">Recent projects</p>
+      <div class="project-overview-card">
+        <img src="images/project-image-example.jpg" class="project-picture">
+        <div class="project-information-section">
+          <div class="project-technologies-tags">
+            <p>html</p>
+            <p>css</p>
+            <p>javascript</p> 
+          </div>
+          <div class="project-header">
+            <p class="project-title">Project Title</p>
+            <p class="project-date">Jan 03, 2026</p>
+          </div>
+          <p class="project-description-overview">A task management application designed for remote teams. Includes drag-and-drop kanban boards, real-time collaboration, and automated workflow notifications. Integrated with popular tools like Slack and Google Calendar.</p>
+        </div>
+      </div>
+      <div class="project-overview-card">
+        <img src="images/project-image-example.jpg" class="project-picture">
+        <div class="project-information-section">
+          <div class="project-technologies-tags">
+            <p>html</p>
+            <p>css</p>
+            <p>javascript</p> 
+          </div>
+          <div class="project-header">
+            <p class="project-title">Project Title</p>
+            <p class="project-date">Jan 03, 2026</p>
+          </div>
+          <p class="project-description-overview">A task management application designed for remote teams. Includes drag-and-drop kanban boards, real-time collaboration, and automated workflow notifications. Integrated with popular tools like Slack and Google Calendar.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left-side">
+        <div class="author-card">
+          <img src="images/first-photo.jpg" class="footer-profile-picture">
+          <div>
+            <p><strong>Saul Burns</strong></p>
+            <p>Software Engineer</p>
+          </div>
+        </div>
+        <div class="author-message">
+          <p>Building software and AI solutions that matter.</p>
+        </div>
+        <div class="external-links">
+          <a href="https://www.linkedin.com/in/saul-burns">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/saulburns01/">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.github.com/SaulBurns">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:saulburnss@gmail.com">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-right-side">
+        <p class="footer-section">General</p>
+        <a>
+          <p class="insite-link">About</p>
+        </a>
+        <a>
+          <p class="insite-link">Projects</p>
+        </a>
+        <a>
+          <p class="insite-link">Contact</p>
+        </a>
+        <a href="src/Saul_Burns_Resume.pdf">
+          <p class="insite-link">Resume</p>
+        </a>
+      </div>
+    </div>
+    <p class="copyright-section">© 2026 Saul Burns. All rights reserved.</p>
   </div>
   <script src="scripts/index.js"></script>
 </body>
