@@ -1,0 +1,78 @@
+.recent-projects-container {
+  margin-left: 12px;;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.recent-projects-text {
+  margin: 0px 0px -10px 0px;
+  font-size: 26px;
+  font-weight: 580;
+}
+
+.project-overview-card {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.project-picture {
+  width: 248px;
+  height: 248px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+.project-information-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.project-header {
+  display: flex;
+  direction: row;
+  margin: 12px 0px 26px 0px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 520;
+  flex: 1;
+  margin: 0px;
+}
+
+.project-date {
+  font-size: 14px;
+  font-weight: 520;
+  color: rgb(83, 83, 83);
+  margin: 0px;
+}
+
+.project-technologies-tags {
+  display: flex;
+  display: row;
+  gap: 14px;
+  margin-top: 16px;
+  margin-left: -2px;
+}
+
+.project-technologies-tags p{
+  font-size: 12px;
+  font-weight: 520;
+  color: rgb(68, 68, 68);
+  margin: 0px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  padding: 4px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-description-overview {
+  margin: 0px;
+  color: rgb(66, 65, 65);
+  font-size: 15px;
+  font-weight: 330;
+  line-height: 1.6;
+}

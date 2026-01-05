@@ -5,6 +5,7 @@
   right: 0px;
   height: 68px;
   padding: 6px 0px;
+  margin-top: 4px;
 
   display: flex;
   flex-direction: row;
@@ -22,11 +23,13 @@
   border-radius: 50%;
   object-fit: cover;
   margin-left: 12px;
+  object-position: center;
+  border: solid;
+  border-width: 1px;
 }
 
 .header-container a {
   margin: 0 18px;
-  font-family: "Public Sans", Helvetica, Arial;
   font-weight: 580;
   font-size: 15px;
   color: rgb(39, 39, 39);

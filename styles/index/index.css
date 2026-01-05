@@ -13,3 +13,11 @@ body {
   margin: 0 auto;
   padding: 0px;
 }
+
+a {
+  text-decoration: none;
+}
+
+a, p, button{
+  font-family: "Public Sans", Helvetica, Arial;
+}
