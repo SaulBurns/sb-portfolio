@@ -12,12 +12,15 @@ body {
   height: 100vh;
   margin: 0 auto;
   padding: 0px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   text-decoration: none;
 }
 
-a, p, button{
+a, p, button, label, input, textarea{
   font-family: "Public Sans", Helvetica, Arial;
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index/index.css">
+  <link rel="stylesheet" href="styles/index/header.css">
+  <link rel="stylesheet" href="styles/index/footer.css">
+  <link rel="stylesheet" href="styles/contact/contact.css">
+  <link rel="icon" href="images/favicon.jpg" type="image/jpg" style="width:12px;">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Saul Burns</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="header-container">
+      <div class="profile-picture-container">
+      <a href="index.html" style="margin: 0;">
+        <img src="images/first-photo.jpg" class="profile-picture">
+      </a>
+      </div>
+      <a>About</a>
+      <a>Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="src/Saul_Burns_Resume.pdf">Resume</a>
+    </div>
+    <div class="form-container">
+      <p class="contact-headline">Let's connect</p>
+      <p class="contact-message">Drop me a message and let's start a conversation. 🚀</p>
+      <form class="contact-form">
+        <div class="fullname-section">
+          <div class="fname-section">
+            <label>First Name <span style="color: red; font-weight: bold;">*</span>
+              <input type="text" id="fname" name="fname" placeholder="John">
+            </label>
+          </div>
+          <div class="lname-section">
+            <label>Last Name <span style="color: red; font-weight: bold;">*</span>
+              <input type="text" id="lname" name="lname" placeholder="Doe">
+            </label>
+          </div>
+        </div>
+        <label>Email <span style="color: red; font-weight: bold;">*</span>
+          <input type="text" id="email" name="email" placeholder="Johndoe@gmail.com">
+        </label>
+        <label>Subject/Topic<br>
+          <select id="subject" name="subject">
+            <option value="">Choose an option</option>
+            <option value="job-internship-inquiry">Job/Internship Inquiry</option>
+            <option value="project-discussion">Project Discussion</option>
+            <option value="general-question">General Question</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label>Message <span style="color: red; font-weight:bold;">*</span>
+          <textarea id="message" name="message" class="box-message"></textarea>
+        </label>
+        <input type="submit" class="submit-button" value="Submit"></input>
+      </form>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left-side">
+        <div class="author-card">
+          <img src="images/first-photo.jpg" class="footer-profile-picture">
+          <div>
+            <p><strong>Saul Burns</strong></p>
+            <p>Software Engineer</p>
+          </div>
+        </div>
+        <div class="author-message">
+          <p>Building software and AI solutions that matter.</p>
+        </div>
+        <div class="external-links">
+          <a href="https://www.linkedin.com/in/saul-burns">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/saulburns01/">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.github.com/SaulBurns">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:saulburnss@gmail.com">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-right-side">
+        <p class="footer-section">General</p>
+        <a>
+          <p class="insite-link">About</p>
+        </a>
+        <a>
+          <p class="insite-link">Projects</p>
+        </a>
+        <a href="contact.html">
+          <p class="insite-link">Contact</p>
+        </a>
+        <a href="src/Saul_Burns_Resume.pdf">
+          <p class="insite-link">Resume</p>
+        </a>
+      </div>
+    </div>
+    <p class="copyright-section" style="margin-top: 0px; margin-bottom: 0px;">© 2026 Saul Burns. All rights reserved.</p>
+  </div>
+</body>
+</html>

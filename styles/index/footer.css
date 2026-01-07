@@ -1,9 +1,17 @@
 .footer-container {
+  width: 100%;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+
+/* .footer-container {
   margin-left: 12px;
   display: flex;
   flex-direction: row;
   margin-top: 60px;
-}
+} */
 
 .footer-left-side {
   flex: 1;
@@ -72,7 +80,7 @@
 
 .copyright-section {
   margin-left: 12px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   font-size: 12px;
   color: rgb(66, 65, 65);
   margin-left: 16px;
