@@ -1,0 +1,205 @@
+.experience-headline {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 32px 0px 32px 14px;
+}
+
+.timeline-container {
+  width: 100%;
+  position: relative;
+  z-index: -2;
+  margin-top: 40px;
+  margin-bottom: 68px;
+}
+
+.experience-box {
+  box-sizing: border-box; 
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 0.4;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.experience-box:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.experience-box:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.experience-box:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.experience-box:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.experience-box:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.experience-box:nth-child(6) {
+  animation-delay: 5s;
+}
+
+.left-ebox {
+  left: 0;
+}
+
+.right-ebox {
+  left: 50%;
+}
+
+.experience-text-box {
+  padding: 10px 30px;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.experience-box img {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  object-fit:contain;
+  right: -37px;
+  top: 22px;
+  z-index: 10px;
+}
+
+.right-ebox img {
+  left: -37px;
+}
+
+img.l-utep-logo {
+  height: 100px;
+  width: 100px;
+  right: -47px;
+  top: 10px;
+}
+
+img.r-utep-logo {
+  height: 100px;
+  width: 100px;
+  left: -53px;
+  top: 10px;
+}
+
+img.graduation-icon {
+  height: 100px;
+  width: 100px;
+  left: -50px;
+  top: 10px;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  background: rgb(235, 235, 235);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    opacity: 0.5;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.experience-text-box h2 {
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.organization {
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.experience-text-box small {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.left-ebox-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid rgb(235, 235, 235);
+  right: -15px;
+}
+
+.right-ebox-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid rgb(235, 235, 235);
+  left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-container {
+    margin: 50px auto;
+  }
+  .timeline-container::after {
+    left: 31px;
+  }
+  .experience-box {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .experience-text-box {
+    font-size: 13px;
+  }
+  .experience-text-box small {
+    margin-bottom: 10px;
+  }
+  .right-ebox {
+    left: 0;
+  }
+  .left-ebox img, .right-ebox img {
+    left: 10px;
+  }
+  .left-ebox-arrow, .right-ebox-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
+  }
+}

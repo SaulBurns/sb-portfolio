@@ -21,6 +21,6 @@ a {
   text-decoration: none;
 }
 
-a, p, button, label, input, textarea{
+a, p, button, label, input, textarea, h1, h2, small{
   font-family: "Public Sans", Helvetica, Arial;
 }
