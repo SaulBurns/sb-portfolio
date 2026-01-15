@@ -37,6 +37,24 @@ nav a {
   flex-direction: row;
 }
 
+.nav-contact-link {
+  position: relative;
+}
+
+.soon-notification {
+  background-color: red;
+  color: white;
+  border-radius: 12px;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 3px 6px;
+  font-size: 10px;
+  position: absolute;
+  bottom: -15px;
+  right: -14px;
+}
+
 #open-sidebar-button {
   display: none;
   background: none;
@@ -90,5 +108,11 @@ nav a {
   }
   .show-nav-links ~ #overlay {
     display: block;
+  }
+  .soon-notification {
+    border-color: rgb(235, 235, 235); 
+    border-width: 2px;
+    bottom: -12px;
+    right: 85px;
   }
 }
