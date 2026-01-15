@@ -1,17 +1,11 @@
-.footer-container {
+footer {
   width: 100%;
   margin-left: 12px;
   display: flex;
   flex-direction: row;
   margin-top: auto;
+  gap: 20px;
 }
-
-/* .footer-container {
-  margin-left: 12px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 60px;
-} */
 
 .footer-left-side {
   flex: 1;
