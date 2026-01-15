@@ -3,29 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/global.css">
-  <link rel="stylesheet" href="styles/components/header.css">
-  <link rel="stylesheet" href="styles/components/footer.css">
-  <link rel="stylesheet" href="styles/pages/index_mid.css">
-  <link rel="stylesheet" href="styles/pages/projects.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/components/header.css">
+  <link rel="stylesheet" href="../styles/components/footer.css">
+  <link rel="stylesheet" href="../styles/pages/projects.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="icon" href="../images/favicon.jpg" type="image/jpg" style="width:12px;">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,300,0,0&icon_names=close,menu" />
-  <link rel="icon" href="images/favicon.jpg" type="image/jpg" style="width:12px;">
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script src="scripts/components/navbar.js" defer></script>
-  <script src="scripts/pages/index.js" defer></script>
+  <script src="../scripts/components/navbar.js" defer></script>
   <title>Saul Burns</title>
 </head>
 <body>
   <div class="main-container">
     <nav>
       <div class="profile-picture-container">
-        <a href="index.html" style="margin: 0;">
-          <img src="images/me/first-photo.jpg" class="profile-picture">
+        <a href="../index.html" style="margin: 0;">
+          <img src="../images/me/first-photo.jpg" class="profile-picture">
         </a>
       </div>
       <button id="open-sidebar-button" onclick="openSidebar()">
@@ -35,62 +31,18 @@
         <button id="close-sidebar-button" onclick="closeSidebar()">
           <span class="material-symbols-rounded" style="font-size: 42px;">close</span>
         </button>
-        <a href="index.html">Home</a>
-        <a href="pages/experience.html">Experience</a>
-        <a href="pages/projects.html">Projects</a>
-        <a href="pages/contact.html">Contact</a>
-        <a href="assets/Saul_Burns_Resume.pdf" target="_blank">Resume</a>
+        <a href="../index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="../assets/Saul_Burns_Resume.pdf" target="_blank">Resume</a>
       </div>
       <div id="overlay" onclick="closeSidebar()"></div>
-    </nav>
-    <div class="mid-container">
-      <div class="text-section">
-        <p class="welcome-message">Welcome to my portfolio,</p>
-        <p class="headline">
-          I'm Saul Burns, a<br>
-          <span id="js-dynamic-headline"></span>
-        </p>
-        <div class="icons-container">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" class="skill"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skill"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" class="skill"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="skill"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skill"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skill"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="skill"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skill"/>
-        </div>
-        <p class="text-presentation"> 
-          Pursuing my B.S. in <strong>Computer Science</strong> and fast-tracking
-          into a Master's in <strong>AI</strong>. I love working on meaningful
-          projects that solve real problems and help people.
-          Always learning, always writing code or just riding my bike.
-        </p>
-        <div class="bottom-buttons">
-          <a href="pages/projects.html">
-            <button class="projects-button">Projects
-              <img src="images/logo/icons8-project-50.png">
-            </button>
-          </a>
-          <a href="assets/Saul_Burns_Resume.pdf" target="_blank">
-            <button class="resume-button">Resume
-              <img src="images/logo/icons8-external-link-30.png">
-            </button>
-          </a>
-        </div>
-      </div>
-      <div class="picture-column-one">
-        <img src="images/me/first-photo.jpg" class="picture-one">
-        <img src="images/me/second-photo.jpg" class="picture-two" id="js-picture-two">
-      </div>
-      <div class="picture-column-two">
-        <img src="images/me/third-photo.jpg" class="picture-three" id="js-picture-three">
-      </div>
-    </div>
-    <div class="recent-projects-container">
-      <p class="recent-projects-text">Recent projects</p>
+    </nav> 
+    <div class="recent-projects-container" style="margin-top: 28px">
+      <p class="recent-projects-text">Projects</p>
       <div class="project-overview-card">
-        <img src="images/project/ticket_oop_image.jpg" class="project-picture ticket-oop-image">
+        <img src="../images/project/ticket_oop_image.jpg" class="project-picture ticket-oop-image">
         <div class="project-information-section">
           <div class="project-technologies-tags">
             <p>java</p>
@@ -111,7 +63,29 @@
         </div>
       </div>
       <div class="project-overview-card">
-        <img src="images/project/sudoku_image.jpg" class="project-picture">
+        <img src="../images/project/database_image.jpg" class="project-picture database-image">
+        <div class="project-information-section">
+          <div class="project-technologies-tags">
+            <p>mysql</p>
+            <p>php</p>
+            <p>html</p>
+            <p>css</p> 
+          </div>
+          <div class="project-header">
+            <p class="project-title">Supermarket Inventory & Reporting System</p>
+            <p class="project-date">December 2025</p>
+          </div>
+          <p class="project-description-overview">
+            A full-stack supermarket inventory system built from the ground up, starting with entity-
+            relationship modeling and table normalization to create an efficient MySQL database. The web
+            interface display dynamic queries and reports from mock product data. This project deepened
+            my understanding of database design principles, normalization techniques, and integrating
+            backend databases with frontend displays.
+          </p>
+        </div>
+      </div>
+      <div class="project-overview-card">
+        <img src="../images/project/sudoku_image.jpg" class="project-picture">
         <div class="project-information-section">
           <div class="project-technologies-tags">
             <p>python</p>
@@ -129,11 +103,28 @@
           </p>
         </div>
       </div>
+      <div class="project-overview-card">
+        <img src="../images/project/wordle_image.jpg" class="project-picture wordle-image">
+        <div class="project-information-section">
+          <div class="project-technologies-tags">
+            <p>java</p>
+          </div>
+          <div class="project-header">
+            <p class="project-title">Wordle</p>
+            <p class="project-date">May 2024</p>
+          </div>
+          <p class="project-description-overview">
+            A recreation of the popular Wordle game, the program reads from a large dictionary file of 5-
+            letter words and validates user guesses until the correct word is found. This project strengthened my
+            grasp of essential programming concepts through building an engaging, interactive game.
+          </p>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="footer-left-side">
         <div class="author-card">
-          <img src="images/me/first-photo.jpg" class="footer-profile-picture">
+          <img src="../images/me/first-photo.jpg" class="footer-profile-picture">
           <div>
             <p><strong>Saul Burns</strong></p>
             <p>Software Engineer</p>
@@ -159,16 +150,16 @@
       </div>
       <div class="footer-right-side">
         <p class="footer-section">General</p>
-        <a href="pages/experience.html">
+        <a href="experience.html">
           <p class="insite-link">Experience</p>
         </a>
-        <a href="pages/projects.html">
+        <a href="projects.html">
           <p class="insite-link">Projects</p>
         </a>
-        <a href="pages/contact.html">
+        <a href="contact.html">
           <p class="insite-link">Contact</p>
         </a>
-        <a href="assets/Saul_Burns_Resume.pdf" target="_blank">
+        <a href="../assets/Saul_Burns_Resume.pdf" target="_blank">
           <p class="insite-link">Resume</p>
         </a>
       </div>

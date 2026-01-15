@@ -1,7 +1,7 @@
 .experience-headline {
-  font-weight: bold;
-  font-size: 32px;
-  margin: 32px 0px 32px 14px;
+  font-size: 26px;
+  font-weight: 580;
+  margin: 28px 0px 32px 14px;
 }
 
 .timeline-container {
@@ -173,6 +173,7 @@ img.graduation-icon {
   left: -15px;
 }
 
+/* Phones */
 @media screen and (max-width: 600px) {
   .timeline-container {
     margin: 50px auto;
@@ -194,12 +195,23 @@ img.graduation-icon {
   .right-ebox {
     left: 0;
   }
-  .left-ebox img, .right-ebox img {
-    left: 10px;
-  }
   .left-ebox-arrow, .right-ebox-arrow {
-    border-right: 15px solid #fff;
+    border-right: 15px solid rgb(235, 235, 235);;
     border-left: 0;
-    left: -15px;
+    left: -14px;
+  }
+  .left-ebox img, .right-ebox img {
+    left: -6px;
+  }
+  img.l-utep-logo, img.r-utep-logo {
+    left: -20px;
+  }
+  img.frs-logo {
+    width: 60px;
+    height: 60px;
+    left: 1.5px;
+  }
+  img.graduation-icon {
+    left: -19px;
   }
 }
