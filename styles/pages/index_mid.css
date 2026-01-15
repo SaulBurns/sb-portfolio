@@ -119,6 +119,13 @@
   background-color: black;
   color: white;
   margin-right: 4px;
+  transition: 0.3s;
+}
+
+.projects-button:hover {
+  padding-left: 26px;
+  padding-right: 26px;
+  transition: 0.3s;
 }
 
 .resume-button {
@@ -126,6 +133,13 @@
   border-style: solid;
   background-color: rgb(255, 255, 255);
   border-width: 1px;
+  transition: 0.3s;
+}
+
+.resume-button:hover {
+  padding-left: 26px;
+  padding-right: 26px;
+  transition: 0.3s;
 }
 
 /* Small screens */
